@@ -1,0 +1,40 @@
+---
+title: "Tutorial_ICC.Rmd"
+author: "Ting Xu"
+output: html_document
+---
+
+#```{r setup, include=FALSE}
+#knitr::opts_chunk$set(echo = TRUE)
+#```
+
+#```{r setup, include=FALSE}
+#source('func_plot.R', echo = FALSE)
+#```
+## Demo: Individual variation
+
+This is a **Demo** for individual variation field map and reliability 
+see Ref <http://JAMA-paper-link.com>
+
+```{r load}
+load('data/Demo_ToyData1.RData')
+nsubj <- 10
+nsession <- 2
+```
+
+## Plot the individual distance matrix
+
+You can also embed plots, for example:
+
+```{r distance_matrix, echo=FALSE}
+d <- dist(df[,3:102], diag=TRUE, upper=TRUE)
+d <- array(matrix(as.matrix(d)), dim=c(nsubj*nsession, nsubj*nsession))
+p <- distance_plot(d,'')
+p
+```
+```{r variation_field, echo=FALSE}
+d <- dist(df[,3:102], diag=TRUE, upper=TRUE)
+d <- array(matrix(as.matrix(d)), dim=c(nsubj*nsession, nsubj*nsession))
+p <- distance_plot(d,'')
+p
+```

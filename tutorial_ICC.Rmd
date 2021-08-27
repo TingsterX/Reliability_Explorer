@@ -1,0 +1,69 @@
+## Intra-class Correlation
+
+----
+
+### ICC definition  
+
+- ${ICC = \frac{ {\sigma}_{b}^2 }{ {\sigma}_{b}^2 + {\sigma}_{e}^2}}$
+- Analysis of variance (ANOVA) model: ${\sigma}_{B}^2(Y_{ij}) = {\sigma}_{b}^2 + {\sigma}_{e}^2$
+- Random effect model: $y = {\mu}_{0} + {\lambda}_{i} + {\epsilon}_{ij}$, ${\lambda}_{j} \sim N(0, {\sigma}_{\lambda}^2)$, ${\epsilon}_{j} \sim N(0, {\sigma}_{\epsilon}^2)$
+
+
+The observed individual variation ${\sigma}_{B}^2$ between $Y_{ij}$ (i: repetitions, j: subjects) contains the true between-individual variation ${\sigma}_{b}^2$ across subjects and the within-individual variations (e.g. residual variation ${\sigma}_{\epsilon}^2$).
+
+### ICC models 
+
+---- 
+
+#### 1. one-way random model
+
+- $y = {\mu}_{0} + {\lambda}_{j} + {\epsilon}_{ij}$, ${\lambda}_{j} \sim N(0, {\sigma}_{\lambda}^2)$, ${\epsilon}_{ij} \sim N(0, {\sigma}_{\epsilon}^2)$
+- i: repetitions (e.g. sessions, scans, sites, etc.), j: subjects
+
+In **R** package **lme4** with ReML (Restricted Maximum Likelihood)
+```
+lmer(y ~ 1 + (1|subID), REML=TRUE)
+```
+
+
+- ${ICC = \frac{ {\sigma}_{b}^2 }{ {\sigma}_{b}^2 + {\sigma}_{\epsilon}^2}}$
+- ${\sigma}_{b}^2$ variation between individuals
+- ${\sigma}_{\epsilon}^2$ variation of residuals 
+
+----
+
+#### 2. two-way random model 
+- $y = {\mu}_{0} + {\lambda}_{j} + {\alpha}_{j} + {\epsilon}_{ij}$, ${\lambda}_{j} \sim N(0, {\sigma}_{\lambda}^2)$, ${\alpha}_{j} \sim N(0, {\sigma}_{\alpha}^2)$, ${\epsilon}_{ij} \sim N(0, {\sigma}_{\epsilon}^2)$
+- i: repetitions (e.g. sessions, scans, sites, etc.), j: subjects
+
+In **R** package **lme4** with ReML (Restricted Maximum Likelihood)
+```
+lmer(y ~ 1 + (1|session) + (1|subID), REML=TRUE)
+```
+
+
+- ${ICC = \frac{ {\sigma}_{b}^2 }{ {\sigma}_{b}^2 + {\sigma}_{s}^2 + {\sigma}_{\epsilon}^2}}$
+- ${\sigma}_{b}^2$ variation between individuals
+- ${\sigma}_{s}^2$ variation between sessions
+- ${\sigma}_{\epsilon}^2$ variation of residuals 
+
+
+----
+
+#### 3. two-way mixed model 
+- $y = {\mu}_{0} + {\lambda}_{j} + {\alpha}_{j} + {\epsilon}_{ij}$, ${\lambda}_{j} \sim N(0, {\sigma}_{\lambda}^2)$, ${\alpha}_{j} \sim N(0, {\sigma}_{\alpha}^2)$, ${\epsilon}_{ij} \sim N(0, {\sigma}_{\epsilon}^2)$
+- i: repetitions (e.g. sessions, scans, sites, etc.), j: subjects
+
+In **R** package **lme4** with ReML (Restricted Maximum Likelihood)
+```
+lmer(y ~ 1 + session + (1|subID), REML=TRUE)
+```
+
+
+- ${ICC = \frac{ {\sigma}_{b}^2 }{ {\sigma}_{b}^2 + {\sigma}_{\epsilon}^2}}$
+- ${\sigma}_{b}^2$ variation between individuals
+- ${\sigma}_{\epsilon}^2$ variation of residuals
+
+----
+
+#### Reference
