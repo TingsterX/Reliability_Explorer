@@ -2,18 +2,21 @@
 library(reshape2)
 library(ggplot2)
 library(scales)
-library(ggridges)
 library(RColorBrewer)
-theme_set(theme_ridges())
+library(dplyr)
 
-distance_plot <- function(Dmax, gtitle) {
+cmap_icc_list <- list(c(0, '#7b1c43'),  c(0.2, '#43435f'), c(0.3, "#5e5f91"), c(0.4, "#9493c8"), 
+                      c(0.5, "#64bc46"), c(0.6, "#54b24c"), c(0.7, "#f6eb2b"), c(0.8, "#f5a829"), 
+                      c(0.9, "#f07e27"), c(1, "#ec3625"), c(1, "#ec3625"))
+
+plot.distance <- function(Dmax, gtitle='') {
   # plot distance matrix
   # Input: Dmax (distance matrix)
+  xmin <- min(Dmax[Dmax>0])
+  xmax <- max(Dmax)
   pdist <- ggplot(melt(Dmax), aes(x=Var1, y=Var2, fill=value)) + 
     geom_tile(color="grey") +
-    scale_fill_gradientn(colours=c("blue","white", "red"), name="distance") +
-    #scale_fill_gradientn(colours=c("#3c9ab2", "#ffffff", "#f22300"), name="distance") +
-    #scale_fill_gradientn(colours = brewer.pal(9, 'GnBu'), name="distance") +
+    scale_fill_gradientn(colours=c("blue","white", "red"), name="distance", limits=c(xmin, xmax)) +
     xlab("") + ylab("") + coord_fixed(ratio=1) +
     ggtitle(gtitle) + scale_y_reverse() +
     theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), 
@@ -23,7 +26,7 @@ distance_plot <- function(Dmax, gtitle) {
 }
 
 # 
-distance_field_map.plot <- function(dFM.df, ptype){
+plot.distance_field_map <- function(dFM.df, ptype){
   # plot the distance field map
   # Input: distance_field_map.df(Dmax, subID)
   # x-axis: within-individual distance
@@ -34,45 +37,107 @@ distance_field_map.plot <- function(dFM.df, ptype){
   
   dFMmin <- min(min(dFM.df$wD), min(dFM.df$bD))
   dFMmax <- max(max(dFM.df$wD), max(dFM.df$bD))
+  dFMmargin <- (dFMmax - dFMmin)/20
+  dFMmin <- max(dFMmin-dFMmargin, 0)
+  dFMmax <- dFMmax+dFMmargin
+  
+  df_line <- data.frame(x=c(dFMmin, dFMmax), y=c(dFMmin, dFMmax))
+  df_poly_above <- df_line
+  df_poly_above[nrow(df_line)+1,] <- c(dFMmax, dFMmax)
+  df_poly_above[nrow(df_line)+2,] <- c(dFMmin, dFMmax)
   
   if (ptype == 'Discr'){
-  p <- ggplot(dFM.df,aes(wD, bD, color=distance)) + 
-    geom_point(shape=19, size=2) + 
-    scale_color_manual(values = c('#ff471a', '#696969')) + 
-    geom_abline(slope=1, intercept=0) +
-    xlim(dFMmin, dFMmax) + ylim(dFMmin, dFMmax) +
-    xlab('Within-individual distance') + ylab('Between-individual distance') +
-    labs(color = "Discriminability") +
+  p <- ggplot(dFM.df,aes(wD, bD)) + 
+    geom_point(aes(colour=distance, fill = distance), shape=21, size = 2) + 
+    scale_fill_manual(values= c('#ff9987', 'grey80')) + 
+    scale_color_manual(values = c('orangered2', 'grey10')) + 
+    geom_abline(slope=1, intercept=0, color='forestgreen') +
+    scale_x_continuous(limits=c(dFMmin, dFMmax), expand = c(0, 0)) + 
+    scale_y_continuous(limits=c(dFMmin, dFMmax), expand = c(0, 0)) +
+    xlab('Within-individual distance') + ylab('Observed Between-individual distance') +
+    labs(color = "Discriminability") + guides(fill="none") +
     coord_equal() + theme(aspect.ratio=1) +
     theme_bw() 
   }
   else if (ptype == 'FP1'){
-    p <- ggplot(dFM.df,aes(wD, bD, color=FPsub)) + 
-      geom_point(shape=19, size=2) + 
-      scale_color_manual(values = c('#ff471a', '#696969')) + 
-      geom_abline(slope=1, intercept=0) +
-      xlim(dFMmin, dFMmax) + ylim(dFMmin, dFMmax) +
-      xlab('Within-individual distance') + ylab('Between-individual distance') +
-      labs(color = "Fingerprinting (sub)") +
+    p <- ggplot(dFM.df,aes(wD, bD)) + 
+      geom_point(aes(colour=FPsub, fill = FPsub), shape=21, size = 2) + 
+      scale_fill_manual(values= c('#ff9987', 'grey80')) + 
+      scale_color_manual(values = c('orangered2', 'grey10')) + 
+      geom_abline(slope=1, intercept=0, color='forestgreen') +
+      scale_x_continuous(limits=c(dFMmin, dFMmax), expand = c(0, 0)) + 
+      scale_y_continuous(limits=c(dFMmin, dFMmax), expand = c(0, 0)) +
+      xlab('Within-individual distance') + ylab('Observed Between-individual distance') +
+      labs(color = "Fingerprinting (sub)") + guides(fill="none") +
       coord_equal() + theme(aspect.ratio=1) +
       theme_bw() 
   }
   else if (ptype == 'FP2'){
-    p <- ggplot(dFM.df,aes(wD, bD, color=FPwithin)) + 
-      geom_point(shape=19, size=2) + 
-      scale_color_manual(values = c('#ff471a', '#696969')) + 
-      geom_abline(slope=1, intercept=0) +
-      xlim(dFMmin, dFMmax) + ylim(dFMmin, dFMmax) +
-      xlab('Within-individual distance') + ylab('Between-individual distance') +
-      labs(color = "Fingerprinting (sub*scans)") +
+    p <- ggplot(dFM.df,aes(wD, bD)) + 
+      geom_point(aes(colour=FPwithin, fill = FPwithin), shape=21, size = 2) + 
+      scale_fill_manual(values= c('#ff9987', 'grey80')) + 
+      scale_color_manual(values = c('orangered2', 'grey10')) + 
+      geom_abline(slope=1, intercept=0, color='forestgreen') +
+      scale_x_continuous(limits=c(dFMmin, dFMmax), expand = c(0, 0)) + 
+      scale_y_continuous(limits=c(dFMmin, dFMmax), expand = c(0, 0)) +
+      xlab('Within-individual distance') + ylab('Observed Between-individual distance') +
+      labs(color = "Fingerprinting (repetition)") + guides(fill="none") +
+      coord_equal() + theme(aspect.ratio=1) +
+      theme_bw() 
+  }
+  else if (ptype == 'Discr+FP1'){
+    p <- ggplot(dFM.df,aes(wD, bD)) + 
+      geom_point(aes(colour=FPsub, fill = FPsub), shape=21, size = 2) + 
+      geom_polygon(data = df_poly_above, aes(x,y), fill = "red", alpha = .2) +
+      scale_color_manual(values = c('orangered2', 'grey10')) + 
+      scale_fill_manual(values= c('#ff9987', 'grey80')) + 
+      geom_abline(slope=1, intercept=0, color='forestgreen') +
+      scale_x_continuous(limits=c(dFMmin, dFMmax), expand = c(0, 0)) + 
+      scale_y_continuous(limits=c(dFMmin, dFMmax), expand = c(0, 0)) +
+      xlab('Within-individual distance') + ylab('Observed Between-individual distance') +
+      guides(color="none", fill="none") + 
+      coord_equal() + theme(aspect.ratio=1) +
+      theme_bw() 
+  }
+  else if (ptype == 'Discr+FP2'){
+    p <- ggplot(dFM.df,aes(wD, bD)) + 
+      geom_point(aes(colour=FPwithin, fill = FPwithin), shape=21, size = 2) + 
+      geom_polygon(data = df_poly_above, aes(x,y), fill = "red", alpha = .2) +
+      scale_color_manual(values = c('orangered2', 'grey10')) + 
+      scale_fill_manual(values= c('#ff9987', 'grey80')) + 
+      geom_abline(slope=1, intercept=0, color='forestgreen') +
+      scale_x_continuous(limits=c(dFMmin, dFMmax), expand = c(0, 0)) + 
+      scale_y_continuous(limits=c(dFMmin, dFMmax), expand = c(0, 0)) +
+      xlab('Within-individual distance') + ylab('Observed Between-individual distance') +
+      guides(color="none", fill="none") + 
+      coord_equal() + theme(aspect.ratio=1) +
+      theme_bw() 
+  }
+  else if (ptype == 'all'){
+    p <- ggplot(dFM.df,aes(wD, bD)) + 
+      geom_point(aes(colour=FPsub, fill = FPwithin), shape=21, size = 2) + 
+      geom_polygon(data = df_poly_above, aes(x,y), fill = "red", alpha = .2) +
+      scale_color_manual(values = c('orangered2', 'grey10')) + 
+      scale_fill_manual(values= c('#ff9987', 'grey80')) + 
+      geom_abline(slope=1, intercept=0, color='forestgreen') +
+      scale_x_continuous(limits=c(dFMmin, dFMmax), expand = c(0, 0)) + 
+      scale_y_continuous(limits=c(dFMmin, dFMmax), expand = c(0, 0)) +
+      xlab('Within-individual distance') + ylab('Observed Between-individual distance') +
+      guides(color="none", fill="none") + 
+      #labs(color = "Fingerprinting (sub)", fill="Fingerprinting (repetition)") +
       coord_equal() + theme(aspect.ratio=1) +
       theme_bw() 
   }
   else{
-    cat("Please specify the plot type: ptype=\"Discr\",\"FP1\" or \"FP2\"")
-    cat("\"Discr\": Discriminability")
-    cat("\"FP1\": Fingerprinting, count by subject: for each sub_i, count only the case that within-sub distance for sub_i < all ditance for sub_i")
-    cat("\"FP2\": Fingerprinting, count by witin-sub distance: for each within-sub_i distance between scan m and n, count d_i(m,n) < all ( d(sub_i_m,sub_j), d(sub_i_n,sub_j) )")
+    cat("Specify the plot type: ptype=\"Discr\",\"FP1\", \"FP2\", \"Discr+FP2\", \"Discr+FP2\", \"all\" \n")
+    cat("\"Discr\": Discriminability \n")
+    cat("\"FP1\": Fingerprinting, count by subjects: \n")
+    cat("         for each sub_i, count as \"identified\" only when all the within-sub_i distance < all between-sub_i ditance \n")
+    cat("\"FP2\": Fingerprinting, count by subjects and repetitions: \n")
+    cat("         for each sub_i(p,q), between p-th and q-th repetitions, count as \"identified\" if d(sub_i(p), sub-i(q)) < all ( d(sub_i(p), sub_j_*), d(sub_i(q),sub_j_*), i~=j ) \n")
+    cat("\"Discr+FP1\": Show Discriminability (shaded) and Fingerprinting1 (red dots) in the same plot  \n")
+    cat("\"Discr+FP2\": Show Discriminability (shaded) and Fingerprinting2 (red dots) in the same plot  \n")
+    cat("\"all\": Show Discriminability (shaded), Fingerprinting1 (red dots with red borders), and Fingerprinting2 (red dots with black borders) in the same plot \n")
   }
   
   return(p)
@@ -137,6 +202,8 @@ distance_field_map.df <- function(Dmax, subID){
   
   return(df)
 }
+
+
 
 
 

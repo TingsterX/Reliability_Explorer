@@ -50,7 +50,8 @@ discr.rdf <- function(dist, ids) {
 #' @return discr [1]: the discriminability statistic.
 #' @author Eric Bridgeford and Gregory Kiar
 #' @export
-discr.discr <- function(rdf, remove_outliers=TRUE, thresh=0, output=FALSE) {
+#  Ting Xu, return all discriminaiblity for each within-individual repetition
+discr.discr <- function(rdf, remove_outliers=TRUE, thresh=0, output=FALSE, all_discr.return=FALSE) {
   if (remove_outliers) {
     discr <- mean(rdf[which(rdf[!is.nan(rdf)] > thresh)]) # mean of the rdf
     ol <- length(which(rdf<thresh))
@@ -67,5 +68,9 @@ discr.discr <- function(rdf, remove_outliers=TRUE, thresh=0, output=FALSE) {
     print(paste('Graphs available for reliability analysis:', length(rdf)-ol-nopair))
     print(paste('discr:', discr))
   }
+  if (all_discr.return){
+    return(list(discr, rdf))
+  }else{
   return(discr)
+  }
 }
