@@ -34,7 +34,8 @@ docker run --rm -p 3838:3838 tingsterx/reliability_explorer
 Open a web browser (e.g. Chrome), visit http://localhost:3838/rex
 
 #### Note
-R version: 4.1.0 (2021-05-18)
+- tag: v0.1 (2022-03-01) 
+- R version: 4.1.0 (2021-05-18)
 
 ----
 
