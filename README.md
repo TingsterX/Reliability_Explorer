@@ -1,7 +1,5 @@
 
-### Welcome to **Reliability Explorer (ReX)**
-
-https://tingsterx.shinyapps.io/ReliabilityExplorer
+## Welcome to **Reliability Explorer (ReX)**
 
 ----
 
@@ -13,7 +11,35 @@ https://tingsterx.shinyapps.io/ReliabilityExplorer
 
 ----
 
-##### When using “Reliability Explorer”, please cite the following manuscript:
+### Run **Reliability Explorer (ReX)** online
+
+https://tingsterx.shinyapps.io/ReliabilityExplorer
+
+### Run **Reliability Explorer (ReX)** locally using Docker
+--
+
+#### Install docker
+
+https://docs.docker.com/get-docker/
+
+#### Pull docker image
+
+```
+docker push tingsterx/reliability_explorer
+```
+
+#### Run docker
+```
+docker run --rm -p 3838:3838 tingsterx/reliability_explorer
+```
+
+#### Launch **ReX**
+
+Open a web browser (e.g. Chrome), visit http://localhost:3838/rex
+
+
+#### When using “Reliability Explorer”, please cite the following manuscript:
 
 - T Xu. J W Cho, G Kiar, E W. Bridgeford, J T. Vogelstein, M P. Milham. A Guide for Quantifying and Optimizing Measurement Reliability for the Study of Individual Differences. (doi: https://doi.org/10.1101/2022.01.27.478100)
+
 
