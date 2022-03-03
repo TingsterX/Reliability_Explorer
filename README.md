@@ -21,7 +21,7 @@ https://docs.docker.com/get-docker/
 #### Pull docker image
 
 ```
-docker push tingsterx/reliability_explorer
+docker pull tingsterx/reliability_explorer
 ```
 
 #### Run docker
