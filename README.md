@@ -91,7 +91,7 @@ docker run --rm \
      -v /local/path/to/your/output/:/output \
      tingsterx/rex 
 ```
-The help message and demo code are [here](https://github.com/TingsterX/Reliability_Explorer/blob/main/rex_command_helper.md)
+The help messages and demo code are also [here](https://github.com/TingsterX/Reliability_Explorer/blob/main/rex_command_helper.md)
 
 #### Run R in docker
 ```
