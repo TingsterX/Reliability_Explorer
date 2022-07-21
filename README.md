@@ -31,13 +31,11 @@
 ----
 
 ### Quick Galace
-- Reliability calculation module:
-    - Parametric
-        - [Intraclas correlation](https://github.com/TingsterX/Reliability_Explorer/blob/main/tutorial_ICC_in_R.ipynb)
-        - [Distance-based IntraClass Correlation (dbICC)](https://pubmed.ncbi.nlm.nih.gov/32339252)
-    - Nonparametric
-        - [Discriminability](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009279)
-        - [Identification rate (i.e. frinterprinting)](https://www.nature.com/articles/nn.4135)
+- Reliability calculation module calculate:
+    - Parametric: [Intraclas correlation](https://github.com/TingsterX/Reliability_Explorer/blob/main/tutorial_ICC_in_R.ipynb)
+    - Parametric: [Distance-based IntraClass Correlation (dbICC)](https://pubmed.ncbi.nlm.nih.gov/32339252)
+    - Nonparametric: [Discriminability](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009279)
+    - Nonparametric: [Identification rate (i.e. frinterprinting)](https://www.nature.com/articles/nn.4135)
 - Reliability Comparison module:
     - [Compare individual variation using the gradient flow map](https://github.com/TingsterX/Reliability_Explorer/blob/main/tutorial_compare_icc_and_variation.md)
 - Ploting module:   
