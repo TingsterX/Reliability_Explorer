@@ -72,7 +72,7 @@ Open a web browser (e.g. Chrome), visit http://localhost:3838/rex
 
 ----
 
-### Run **Reliability Explorer (ReX) command line version ** using Docker
+### Run **Reliability Explorer (ReX) command line version** using Docker
 
 #### Install docker
 
@@ -91,6 +91,7 @@ docker run --rm \
      -v /local/path/to/your/output/:/output \
      tingsterx/rex 
 ```
+The help message and demo code are [here](https://github.com/TingsterX/Reliability_Explorer/blob/main/rex_command_helper.md)
 
 #### Run R in docker
 ```
