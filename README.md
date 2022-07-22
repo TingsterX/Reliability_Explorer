@@ -86,12 +86,18 @@ docker pull tingsterx/rex
 
 #### Usage of command line in docker, run
 ```
+docker run --rm tingsterx/rex 
+```
+The help messages and demo code from the above command are also [here](https://github.com/TingsterX/Reliability_Explorer/blob/main/rex_command_helper.md)
+
+To mount your own data folder in the docker, use [-v option](https://docs.docker.com/engine/reference/run/#volume-shared-filesystems)
+```
 docker run --rm \
      -v /local/path/to/your/data:/input \
      -v /local/path/to/your/output/:/output \
      tingsterx/rex 
 ```
-The help messages and demo code are also [here](https://github.com/TingsterX/Reliability_Explorer/blob/main/rex_command_helper.md)
+
 
 #### Run R in docker
 ```
