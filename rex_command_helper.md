@@ -21,7 +21,7 @@ Compare reliability and individual variation, see help see help for each functio
   docker run --rm \ 
        -v /local/path/to/a/folder:/output \ 
        tingsterx/rex rex_command_calc.R \ 
-       -i demo_data.csv \ 
+       -i /input/DemoData_BrainConnectivity.csv \ 
        -u ICC1 \ 
        -m All \ 
        -d 5:364 \ 
@@ -42,8 +42,8 @@ Compare reliability and individual variation, see help see help for each functio
   docker run --rm \ 
        -v /local/path/to/a/folder:/output \ 
        tingsterx/rex rex_command_comp.R \ 
-       --baseline icc_output_Data1.csv \ 
-       --target icc_output_Data2.csv \ 
+       --baseline /input/icc_output_Data1.csv \ 
+       --target /input/icc_output_Data2.csv \ 
        --base_name Data1 \ 
        --target_name Data2 \ 
        --base_w sigma2_w \ 
@@ -64,7 +64,7 @@ Compare reliability and individual variation, see help see help for each functio
   docker run --rm \ 
        -v /local/path/to/a/folder:/output \ 
        tingsterx/rex rex_command_plot.R \ 
-       --input icc_output_Data1.csv \ 
+       --input /input/icc_output_Data1.csv \ 
        --config_file rex_command_plot.txt \ 
        -o /output/demo_rex_plot \ 
        [optional arguments]
@@ -92,7 +92,7 @@ Compare reliability and individual variation, see help see help for each functio
   docker run --rm \ 
        -v /local/path/to/a/folder:/output \ 
        tingsterx/rex rex_command_plotC.R \ 
-       --input CompareICC_Results.csv \ 
+       --input /input/CompareICC_Results.csv \ 
        --plot norm \ 
        --config_file rex_configure_plotC_norm.txt \ 
        -o /output/demo_rex_plotC \ 
@@ -102,4 +102,6 @@ Compare reliability and individual variation, see help see help for each functio
        docker run --rm tingsterx:rex rex_command_plotC.R
 
 ----
-Demo data is also enclosed: https://github.com/TingsterX/Reliability_Explorer/demo_data
+Demo data is also enclosed: https://github.com/TingsterX/Reliability_Explorer/tree/main/demo_data
+
+To pass your local input folder to the docker, use the [-v option](https://docs.docker.com/engine/reference/run/#volume-shared-filesystems)
