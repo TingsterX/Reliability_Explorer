@@ -4,15 +4,15 @@ This is the command line version of ReX which includes the following relabition 
 Calculate and plot reliability and individual variation, see help for each function:
 
 ```
-  docker run --rm tingsterx:rex rex_command_calc.R
-  docker run --rm tingsterx:rex rex_command_plot.R
-  docker run --rm tingsterx:rex rex_command_plotN.R
+  docker run --rm tingsterx/rex rex_command_calc.R
+  docker run --rm tingsterx/rex rex_command_plot.R
+  docker run --rm tingsterx/rex rex_command_plotN.R
 ```
 
 Compare reliability and individual variation, see help see help for each function:
 ```
-  docker run --rm tingsterx:rex rex_command_comp.R
-  docker run --rm tingsterx:rex rex_command_plotC.R
+  docker run --rm tingsterx/rex rex_command_comp.R
+  docker run --rm tingsterx/rex rex_command_plotC.R
 ```
 
 ----
@@ -32,7 +32,7 @@ Compare reliability and individual variation, see help see help for each functio
        [optional arguments]
 ```
   Optional arguments see help message:
-       docker run --rm tingsterx:rex rex_command_calc.R
+       docker run --rm tingsterx/rex rex_command_calc.R
 
   The outputs are saved in /local/path/to/a/folder 
 
@@ -54,7 +54,7 @@ Compare reliability and individual variation, see help see help for each functio
        [optional arguments]
 ```
   Optional arguments see help message:
-       docker run --rm tingsterx:rex rex_command_comp.R
+       docker run --rm tingsterx/rex rex_command_comp.R
 
   The outputs are saved in /local/path/to/a/folder 
 
@@ -70,7 +70,7 @@ Compare reliability and individual variation, see help see help for each functio
        [optional arguments]
 ```
   Optional arguments see help message:
-       docker run --rm tingsterx:rex rex_command_plot.R
+       docker run --rm tingsterx/rex rex_command_plot.R
 
 
 ### Demo: rex_command_plotN.R
@@ -84,7 +84,7 @@ Compare reliability and individual variation, see help see help for each functio
        [optional arguments]
 ```
   Optional arguments see help message:
-       docker run --rm tingsterx:rex rex_command_plotN.R
+       docker run --rm tingsterx/rex rex_command_plotN.R
 
 
 ### Demo: rex_command_plotC.R
@@ -99,7 +99,7 @@ Compare reliability and individual variation, see help see help for each functio
        [optional arguments]
 ```
   Optional arguments see help message:
-       docker run --rm tingsterx:rex rex_command_plotC.R
+       docker run --rm tingsterx/rex rex_command_plotC.R
 
 ----
 Demo data is also enclosed: https://github.com/TingsterX/Reliability_Explorer/tree/main/demo_data
