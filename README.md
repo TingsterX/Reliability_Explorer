@@ -24,7 +24,7 @@
     - [Calculate Reliability and Individual Variation](https://github.com/TingsterX/Reliability_Explorer/blob/main/tutorial_reliability_and_field_map.md)
     - [Compare Variation and ICC](https://github.com/TingsterX/Reliability_Explorer/blob/main/tutorial_compare_icc_and_variation.md)
     - [Run ReX in R](https://github.com/TingsterX/ReX)
-    - [Run ReX from command line in docker](#run-reliability-explorer-rex-command-line-version--using-docker)
+    - [Run ReX from command line in docker](#run-reliability-explorer-rex-command-line-version-using-docker)
     - [Run ReX Shiny App locally in docker](#run-reliability-explorer-rex-shiny-app-locally-using-docker)
     - [Run ReX Shiny App online](https://tingsterx.shinyapps.io/ReliabilityExplorer)
 
@@ -88,7 +88,6 @@ docker pull tingsterx/rex
 ```
 docker run --rm tingsterx/rex 
 ```
-The help messages and demo code from the above command are also [here](https://github.com/TingsterX/Reliability_Explorer/blob/main/rex_command_helper.md)
 
 To mount your own data folder in the docker, use [-v option](https://docs.docker.com/engine/reference/run/#volume-shared-filesystems)
 ```
@@ -98,14 +97,16 @@ docker run --rm \
      tingsterx/rex 
 ```
 
-
-#### Run R in docker
+#### Run R locally in docker
 ```
 docker run -it --rm --entrypoint R \
      -v /local/path/to/your/data:/input \
      -v /local/path/to/your/output/:/output \
      tingsterx/rex
 ```
+
+##### See more help messages and demo code [here](https://github.com/TingsterX/Reliability_Explorer/blob/main/rex_command_helper.md)
+
 
 ----
 
