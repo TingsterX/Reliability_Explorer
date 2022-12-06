@@ -1,7 +1,7 @@
 R Notebook
 ================
 
-## simulation - heterogeneous participant sample
+## simulation - compare high vs low heterogeneous samples
 
 ``` r
 # Let the between-individual variation of the population (sigma2_b=1)
