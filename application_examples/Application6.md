@@ -1,4 +1,4 @@
-Application example 4
+Application example 6
 ================
 Ting Xu (github: tingsterx/reliability_explorer)
 2022-07-08

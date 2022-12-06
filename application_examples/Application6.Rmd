@@ -1,5 +1,5 @@
 ---
-title: "Application example 4"
+title: "Application example 6"
 author: "Ting Xu (github: tingsterx/reliability_explorer)"
 date: "2022-07-08"
 output: github_document
