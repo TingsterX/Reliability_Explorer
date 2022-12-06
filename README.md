@@ -48,6 +48,19 @@
 
         <img src='figures/GradientFlow.png' width='70%'>
 
+### [Applications examples](https://github.com/TingsterX/Reliability_Explorer/tree/main/application_examples)
+
+- Application 1: Behavioral tests in Human Connectome Project 
+- Application 2: Task vs survey comparison for measuring self-regulation (ref: [Enkavi et al.,
+2019](https://www.pnas.org/doi/pdf/10.1073/pnas.1818430116))
+- Application 3: fMRI pipelines comparision ([fMRIPrep](https://fmriprep.org/en/stable/),
+[ABCD](https://www.biorxiv.org/content/10.1101/2021.07.09.451638v1),
+[CCS](https://www.sciencedirect.com/science/article/abs/pii/S2095927316305394)
+[C-PAC](https://fcp-indi.github.io/docs/latest/user/index))
+- Application 4: fMRI pipelines with and without Global signal regression (GSR) 
+- Application 5: 30min vs 10min fMRI data across pipelines
+- Application 6: A single long scan vs multiple shorter scan (ref: [Cho et al., 2021](https://www.sciencedirect.com/science/article/pii/S105381192031034X))
+
 ----
 ### Run **Reliability Explorer (ReX) Shiny App** locally using Docker
 
@@ -110,7 +123,18 @@ docker run -it --rm --entrypoint R \
 
 ----
 
-#### When using “Reliability Explorer”, please cite the following manuscript:
+### Relationship between reliability and validity ([here](reliability_and_validity/reliability_and_validity.md))
+
+![](reliability_and_validity/reliability_validity_gif.gif)
+
+reliability
+<img src='reliability_and_validity/reliability_Colormap.png' width='25%'>
+validity
+<img src='reliability_and_validity/Validity_Colormap.png' width='25%'>
+
+----
+
+#### When using “Reliability Explorer (ReX)”, please cite the following manuscript:
 
 - T Xu. J W Cho, G Kiar, E W. Bridgeford, J T. Vogelstein, M P. Milham. A Guide for Quantifying and Optimizing Measurement Reliability for the Study of Individual Differences. (doi: https://doi.org/10.1101/2022.01.27.478100)
 
