@@ -33,6 +33,7 @@ Results at galance:
 Data: [Enkavi et al., 2019](https://github.com/IanEisenberg/Self_Regulation_Ontology)
 
 Code: [Application2.md](Application2.md)
+
 ----
 
 ### Application 3: fMRI pipelines comparision (fMRIPrep, ABCD, CCS, C-PAC)
@@ -51,11 +52,11 @@ Results and calculation code: [Application3-5](Application3-5)
 
 Result plots at galance (example comparision: fMRIprep vs ABCD)
 
-<img src='Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_fmriprep_all_gsr-cpac_abcd_all_gsr_ReX_CompareICC_ChangeOfVariation_Raw.png' width='50%'>
+<img src='Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_fmriprep_all_gsr-cpac_abcd_all_gsr_ReX_CompareICC_ChangeOfVariation_Raw.png' width='30%'>
 
-<img src='Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_fmriprep_all_gsr-cpac_abcd_all_gsr_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png' width='50%'>
+<img src='Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_fmriprep_all_gsr-cpac_abcd_all_gsr_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png' width='30%'>
 
-<img src='Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_dbICC_per_parcel_plot/PipelineCompare30min__cpac_fmriprep_all_gsr__CompTo__cpac_abcd_all_gsr_parcelwise.png' width='50%'>
+<img src='Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_dbICC_per_parcel_plot/PipelineCompare30min__cpac_fmriprep_all_gsr__CompTo__cpac_abcd_all_gsr_parcelwise.png' width='40%'>
 
 
 ----
@@ -83,11 +84,11 @@ Results and calculation code: [Application3-5](Application3-5)
 
 Result plots at galance:
 
-<img src='Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_plotN/cpac_fmriprep_all_gsr_10min_30min.png' width='50%'>
+<img src='Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_plotN/cpac_fmriprep_all_gsr_10min_30min.png' width='40%'>
 
-<img src='Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp_matrix/30min-10min__cpac_fmriprep_all_gsr__edgewise_matrix.png' width='50%'>
+<img src='Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp_matrix/30min-10min__cpac_fmriprep_all_gsr__edgewise_matrix.png' width='40%'>
 
-<img src='Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_dbICC_per_parcel_plot/30min_10min_cpac_fmriprep_all_gsr_parcelwise.png' width='50%'>
+<img src='Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_dbICC_per_parcel_plot/30min_10min_cpac_fmriprep_all_gsr_parcelwise.png' width='40%'>
 
 
 ----
