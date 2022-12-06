@@ -139,7 +139,7 @@ validity
 simulation: [here](simulation/simulation_variation_and_sample_size.md)
 
 <img src='simulation/simulation_variation_and_sample_size.jpeg' width='70%'>
-----
+
 
 
 
