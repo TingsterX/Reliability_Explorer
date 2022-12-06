@@ -1,7 +1,7 @@
 R Notebook
 ================
 
-## simulation - compare high vs low heterogeneous samples
+## simulation - heterogeneous participant sample
 
 ``` r
 # Let the between-individual variation of the population (sigma2_b=1)
@@ -132,8 +132,8 @@ df %>% group_by(sample) %>% summarise(mean(ICC), sd(ICC))
 ```
 
     ## # A tibble: 2 × 3
-    ##   sample                         `mean(ICC)` `sd(ICC)`
-    ##   <chr>                                <dbl>     <dbl>
+    ##   sample                          `mean(ICC)` `sd(ICC)`
+    ##   <chr>                                 <dbl>     <dbl>
     ## 1 1 - sample heterogeneity (low)        0.360    0.0272
     ## 2 2 - sample heterogeneity (high)       0.692    0.0162
 
