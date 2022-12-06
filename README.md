@@ -49,7 +49,7 @@ Reference: [Xu et al. A Guide for Quantifying and Optimizing Measurement Reliabi
 
         <img src='figures/GradientFlow.png' width='70%'>
 
-### [Applications examples](https://github.com/TingsterX/Reliability_Explorer/tree/main/application_examples)
+### Applications examples ([here](https://github.com/TingsterX/Reliability_Explorer/tree/main/application_examples))
 
 - Application 1: Behavioral tests in Human Connectome Project 
 - Application 2: Task vs survey comparison for measuring self-regulation (ref: [Enkavi et al.,
@@ -139,6 +139,9 @@ validity
 simulation: [here](simulation/simulation_variation_and_sample_size.md)
 
 <img src='simulation/simulation_variation_and_sample_size.jpeg' width='70%'>
+
+----
+Reference: [Xu et al. A Guide for Quantifying and Optimizing Measurement Reliability for the Study of Individual Differences.](https://doi.org/10.1101/2022.01.27.478100)
 
 
 
