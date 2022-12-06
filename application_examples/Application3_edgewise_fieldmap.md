@@ -1,0 +1,245 @@
+## Application 3 - Pipeline Comparison
+
+ReX code: Application3-5/icc_HNU_*.R
+
+ReX output: Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp
+
+    GSR(10min): cpac_default_all_gsr vs cpac_fmriprep_all_gsr
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_default_all_gsr-cpac_fmriprep_all_gsr_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_default_all_gsr-cpac_fmriprep_all_gsr_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(10min): cpac_default_all_gsr vs cpac_ccs_all_gsr
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_default_all_gsr-cpac_ccs_all_gsr_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_default_all_gsr-cpac_ccs_all_gsr_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(10min): cpac_default_all_gsr vs cpac_abcd_all_gsr
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_default_all_gsr-cpac_abcd_all_gsr_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_default_all_gsr-cpac_abcd_all_gsr_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(10min): cpac_fmriprep_all_gsr vs cpac_default_all_gsr
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_fmriprep_all_gsr-cpac_default_all_gsr_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_fmriprep_all_gsr-cpac_default_all_gsr_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(10min): cpac_fmriprep_all_gsr vs cpac_ccs_all_gsr
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_fmriprep_all_gsr-cpac_ccs_all_gsr_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_fmriprep_all_gsr-cpac_ccs_all_gsr_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(10min): cpac_fmriprep_all_gsr vs cpac_abcd_all_gsr
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_fmriprep_all_gsr-cpac_abcd_all_gsr_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_fmriprep_all_gsr-cpac_abcd_all_gsr_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(10min): cpac_ccs_all_gsr vs cpac_default_all_gsr
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_ccs_all_gsr-cpac_default_all_gsr_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_ccs_all_gsr-cpac_default_all_gsr_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(10min): cpac_ccs_all_gsr vs cpac_fmriprep_all_gsr
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_ccs_all_gsr-cpac_fmriprep_all_gsr_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_ccs_all_gsr-cpac_fmriprep_all_gsr_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(10min): cpac_ccs_all_gsr vs cpac_abcd_all_gsr
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_ccs_all_gsr-cpac_abcd_all_gsr_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_ccs_all_gsr-cpac_abcd_all_gsr_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(10min): cpac_abcd_all_gsr vs cpac_default_all_gsr
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_abcd_all_gsr-cpac_default_all_gsr_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_abcd_all_gsr-cpac_default_all_gsr_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(10min): cpac_abcd_all_gsr vs cpac_fmriprep_all_gsr
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_abcd_all_gsr-cpac_fmriprep_all_gsr_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_abcd_all_gsr-cpac_fmriprep_all_gsr_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(10min): cpac_abcd_all_gsr vs cpac_ccs_all_gsr
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_abcd_all_gsr-cpac_ccs_all_gsr_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_abcd_all_gsr-cpac_ccs_all_gsr_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(10min): cpac_default_all vs cpac_fmriprep_all
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_default_all-cpac_fmriprep_all_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_default_all-cpac_fmriprep_all_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(10min): cpac_default_all vs cpac_ccs_all
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_default_all-cpac_ccs_all_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_default_all-cpac_ccs_all_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(10min): cpac_default_all vs cpac_abcd_all
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_default_all-cpac_abcd_all_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_default_all-cpac_abcd_all_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(10min): cpac_fmriprep_all vs cpac_default_all
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_fmriprep_all-cpac_default_all_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_fmriprep_all-cpac_default_all_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(10min): cpac_fmriprep_all vs cpac_ccs_all
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_fmriprep_all-cpac_ccs_all_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_fmriprep_all-cpac_ccs_all_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(10min): cpac_fmriprep_all vs cpac_abcd_all
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_fmriprep_all-cpac_abcd_all_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_fmriprep_all-cpac_abcd_all_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(10min): cpac_ccs_all vs cpac_default_all
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_ccs_all-cpac_default_all_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_ccs_all-cpac_default_all_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(10min): cpac_ccs_all vs cpac_fmriprep_all
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_ccs_all-cpac_fmriprep_all_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_ccs_all-cpac_fmriprep_all_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(10min): cpac_ccs_all vs cpac_abcd_all
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_ccs_all-cpac_abcd_all_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_ccs_all-cpac_abcd_all_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(10min): cpac_abcd_all vs cpac_default_all
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_abcd_all-cpac_default_all_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_abcd_all-cpac_default_all_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(10min): cpac_abcd_all vs cpac_fmriprep_all
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_abcd_all-cpac_fmriprep_all_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_abcd_all-cpac_fmriprep_all_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(10min): cpac_abcd_all vs cpac_ccs_all
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_abcd_all-cpac_ccs_all_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp10min_cpac_abcd_all-cpac_ccs_all_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(30min): cpac_default_all_gsr vs cpac_fmriprep_all_gsr
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_default_all_gsr-cpac_fmriprep_all_gsr_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_default_all_gsr-cpac_fmriprep_all_gsr_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(30min): cpac_default_all_gsr vs cpac_ccs_all_gsr
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_default_all_gsr-cpac_ccs_all_gsr_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_default_all_gsr-cpac_ccs_all_gsr_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(30min): cpac_default_all_gsr vs cpac_abcd_all_gsr
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_default_all_gsr-cpac_abcd_all_gsr_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_default_all_gsr-cpac_abcd_all_gsr_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(30min): cpac_fmriprep_all_gsr vs cpac_default_all_gsr
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_fmriprep_all_gsr-cpac_default_all_gsr_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_fmriprep_all_gsr-cpac_default_all_gsr_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(30min): cpac_fmriprep_all_gsr vs cpac_ccs_all_gsr
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_fmriprep_all_gsr-cpac_ccs_all_gsr_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_fmriprep_all_gsr-cpac_ccs_all_gsr_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(30min): cpac_fmriprep_all_gsr vs cpac_abcd_all_gsr
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_fmriprep_all_gsr-cpac_abcd_all_gsr_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_fmriprep_all_gsr-cpac_abcd_all_gsr_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(30min): cpac_ccs_all_gsr vs cpac_default_all_gsr
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_ccs_all_gsr-cpac_default_all_gsr_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_ccs_all_gsr-cpac_default_all_gsr_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(30min): cpac_ccs_all_gsr vs cpac_fmriprep_all_gsr
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_ccs_all_gsr-cpac_fmriprep_all_gsr_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_ccs_all_gsr-cpac_fmriprep_all_gsr_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(30min): cpac_ccs_all_gsr vs cpac_abcd_all_gsr
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_ccs_all_gsr-cpac_abcd_all_gsr_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_ccs_all_gsr-cpac_abcd_all_gsr_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(30min): cpac_abcd_all_gsr vs cpac_default_all_gsr
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_abcd_all_gsr-cpac_default_all_gsr_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_abcd_all_gsr-cpac_default_all_gsr_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(30min): cpac_abcd_all_gsr vs cpac_fmriprep_all_gsr
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_abcd_all_gsr-cpac_fmriprep_all_gsr_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_abcd_all_gsr-cpac_fmriprep_all_gsr_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(30min): cpac_abcd_all_gsr vs cpac_ccs_all_gsr
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_abcd_all_gsr-cpac_ccs_all_gsr_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_abcd_all_gsr-cpac_ccs_all_gsr_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(30min): cpac_default_all vs cpac_fmriprep_all
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_default_all-cpac_fmriprep_all_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_default_all-cpac_fmriprep_all_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(30min): cpac_default_all vs cpac_ccs_all
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_default_all-cpac_ccs_all_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_default_all-cpac_ccs_all_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(30min): cpac_default_all vs cpac_abcd_all
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_default_all-cpac_abcd_all_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_default_all-cpac_abcd_all_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(30min): cpac_fmriprep_all vs cpac_default_all
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_fmriprep_all-cpac_default_all_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_fmriprep_all-cpac_default_all_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(30min): cpac_fmriprep_all vs cpac_ccs_all
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_fmriprep_all-cpac_ccs_all_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_fmriprep_all-cpac_ccs_all_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(30min): cpac_fmriprep_all vs cpac_abcd_all
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_fmriprep_all-cpac_abcd_all_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_fmriprep_all-cpac_abcd_all_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(30min): cpac_ccs_all vs cpac_default_all
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_ccs_all-cpac_default_all_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_ccs_all-cpac_default_all_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(30min): cpac_ccs_all vs cpac_fmriprep_all
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_ccs_all-cpac_fmriprep_all_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_ccs_all-cpac_fmriprep_all_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(30min): cpac_ccs_all vs cpac_abcd_all
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_ccs_all-cpac_abcd_all_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_ccs_all-cpac_abcd_all_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(30min): cpac_abcd_all vs cpac_default_all
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_abcd_all-cpac_default_all_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_abcd_all-cpac_default_all_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(30min): cpac_abcd_all vs cpac_fmriprep_all
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_abcd_all-cpac_fmriprep_all_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_abcd_all-cpac_fmriprep_all_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)
+
+    GSR(30min): cpac_abcd_all vs cpac_ccs_all
+
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_abcd_all-cpac_ccs_all_ReX_CompareICC_ChangeOfVariation_Raw.png)
+![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_abcd_all-cpac_ccs_all_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)

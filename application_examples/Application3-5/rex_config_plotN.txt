@@ -1,0 +1,7 @@
+plot.title=NULL,
+axis.min=NULL, axis.max=NULL, plot.percent=c(0,.95),
+plot.point=FALSE, size.point = 2, color.point.border="grey50",
+color=NULL, color.brewer.pla = "Set2", 
+plot.density=TRUE, alpha.density = 0.3, 
+show.contour=TRUE, nbins.contour = 6, color.contour=NULL,
+show.icc_slope=TRUE, color.icc_slope="grey50"

@@ -1,0 +1,39 @@
+#### create markdown file - montage plots
+
+```{r}
+cat('## Application 3 - Pipeline Comparison\n')
+cat('\n')
+cat('ReX code: Application3-4/icc_HNU_*.R\n')
+cat('\n')
+cat('ReX output: Application3-4/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp\n')
+cat('\n')
+
+for (amount in c("10min", "30min")){
+  pipeline_list <- c("cpac_default_all_gsr", "cpac_fmriprep_all_gsr", "cpac_ccs_all_gsr", "cpac_abcd_all_gsr")
+  for (pipeline1 in pipeline_list){
+    for (pipeline2 in pipeline_list){
+      if (pipeline1!=pipeline2){
+        prefix <- sprintf('PipelineComp%s_%s-%s', amount, pipeline1, pipeline2)
+        cat(sprintf('    GSR(%s): %s vs %s\n', amount, pipeline1, pipeline2))
+        cat('\n')
+        cat(sprintf('![](Application3-4/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/%s_ReX_CompareICC_ChangeOfVariation_Raw.png)\n', prefix))
+        cat(sprintf('![](Application3-4/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/%s_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)\n', prefix))
+        cat('\n')
+      }
+    }
+  }
+  pipeline_list <- c("cpac_default_all",  "cpac_fmriprep_all",  "cpac_ccs_all", "cpac_abcd_all")
+  for (pipeline1 in pipeline_list){
+    for (pipeline2 in pipeline_list){
+      if (pipeline1!=pipeline2){
+        prefix <- sprintf('PipelineComp%s_%s-%s', amount, pipeline1, pipeline2)
+        cat(sprintf('    GSR(%s): %s vs %s\n', amount, pipeline1, pipeline2))
+        cat('\n')
+        cat(sprintf('![](Application3-4/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/%s_ReX_CompareICC_ChangeOfVariation_Raw.png)\n', prefix))
+        cat(sprintf('![](Application3-4/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/%s_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)\n', prefix))
+        cat('\n')
+      }
+    }
+  }
+}
+```
