@@ -13,6 +13,7 @@
 
 **ReX** online shiny app (https://tingsterx.shinyapps.io/ReliabilityExplorer) 
 
+Reference: [Xu et al. A Guide for Quantifying and Optimizing Measurement Reliability for the Study of Individual Differences.](https://doi.org/10.1101/2022.01.27.478100)
 
 ----
 
@@ -140,8 +141,5 @@ simulation: [here](simulation/simulation_variation_and_sample_size.md)
 <img src='simulation/simulation_variation_and_sample_size.jpeg' width='70%'>
 ----
 
-#### When using “Reliability Explorer (ReX)”, please cite the following manuscript:
-
-- T Xu. J W Cho, G Kiar, E W. Bridgeford, J T. Vogelstein, M P. Milham. A Guide for Quantifying and Optimizing Measurement Reliability for the Study of Individual Differences. (doi: https://doi.org/10.1101/2022.01.27.478100)
 
 
