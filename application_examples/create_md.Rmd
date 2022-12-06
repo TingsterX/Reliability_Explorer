@@ -52,3 +52,25 @@ for (amount in c("10min", "30min")){
     
 }
 ```
+
+
+## Application 5
+```{r}
+pipeline_list <- c("cpac_default_all",  "cpac_fmriprep_all",  "cpac_ccs_all", "cpac_abcd_all",
+                   "cpac_default_all_gsr", "cpac_fmriprep_all_gsr", "cpac_ccs_all_gsr", "cpac_abcd_all_gsr")
+
+
+  for (pipeline in pipeline_list){
+
+        prefix <- sprintf('30min-10min_%s', pipeline)
+        cat(sprintf('30min vs 10min: %s\n', pipeline))
+        cat('\n')
+        cat(sprintf('![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_plotN/%s_10min_30min.png)\n', pipeline))
+        cat('\n')
+        cat(sprintf('![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/%s_ReX_CompareICC_ChangeOfVariation_Raw.png)\n', prefix))
+        cat('\n')
+        cat(sprintf('![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/%s_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)\n', prefix))
+        cat('\n')
+  }
+    
+```

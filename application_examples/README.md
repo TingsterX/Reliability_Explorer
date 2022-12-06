@@ -15,7 +15,7 @@
 
 ### Application 1: Behavioral tests in Human Connectome Project
 
-Results at galance:
+A galance of results:
 
 <img src='Application1_files/figure-gfm/unnamed-chunk-4-1.png' width='50%'>
 
@@ -26,7 +26,7 @@ Code: [Application1.md](Application1.md)
 ----
 ### Application 2: Task vs survey comparison for measuring self-regulation 
 
-Results at galance:
+A galance of results:
 
 <img src='Application2_files/figure-gfm/unnamed-chunk-2-1.png' width='50%'>
     
@@ -40,8 +40,6 @@ Code: [Application2.md](Application2.md)
 
 Data: Consortium for Reliability and Reproducibility (CoRR) - [HNU dataset](http://fcon_1000.projects.nitrc.org/indi/CoRR/html/hnu_1.html)
 
-Results and calculation code: [Application3-5](Application3-5)
-
 
 - fMRI pipelines comparison (edgewise ICC): [field map plots](Application3.md)
 
@@ -50,7 +48,7 @@ Results and calculation code: [Application3-5](Application3-5)
 - fMRI pipelines comparison (parcelwise dbICC): [cortex plots](Application3_plot_parcelwise.md)
 
 
-Result plots at galance (example comparision: fMRIprep vs ABCD)
+A galance of results (example comparision: fMRIprep vs ABCD)
 
 <img src='Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/PipelineComp30min_cpac_fmriprep_all_gsr-cpac_abcd_all_gsr_ReX_CompareICC_ChangeOfVariation_Raw.png' width='30%'>
 
@@ -58,21 +56,25 @@ Result plots at galance (example comparision: fMRIprep vs ABCD)
 
 <img src='Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_dbICC_per_parcel_plot/PipelineCompare30min__cpac_fmriprep_all_gsr__CompTo__cpac_abcd_all_gsr_parcelwise.png' width='40%'>
 
+Results and calculation code: [Application3-5](Application3-5)
 
 ----
 ### Application 4: fMRI pipelines with and without Global signal regression (GSR) 
 
-- GSR vs NoGSR (edgewise ICC): [field map plots](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp) GSR-NOGSR_*.png
+- GSR vs NoGSR (edgewise ICC): [field map plots](Application4.md)
 
 - GSR vs NoGSR (edgewise ICC): [matrix plots](Application4_plot_edgewise.md)
 
-- GSR vs NoGSR (parcelwise dbICC): [cortex plots](Application4_plot_parcelwise.md)
+- GSR vs NoGSR (parcelwise dbICC): [plots](Application4_plot_parcelwise.md)
 
 
-Results and calculation code: [Application3-5](Application3-5) 
+A galance of results (more saved [here](Application3-5/results_cpac_HNU/ROI_Schaefer200/)):
 
-Result plots at galance:
+<img src='Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_dbICC_per_parcel_plot/GSR-NOGSR_10min_All-pipelines_parcelwise_fieldmap.png' width='50%'>
 
+<img src='Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_dbICC_per_parcel_plot/GSR-NOGSR_10min_cpac_fmriprep_all_gsr__CompTo__cpac_fmriprep_all_parcelwise.png' width='40%'>
+
+Results and calculation code: [Application3-5](Application3-5)
 
 ----
 
@@ -85,9 +87,7 @@ Result plots at galance:
 
 - 30min vs 10min (parcelwise dbICC): [cortex plots](Application5_plot_parcelwise.md)
 
-Results and calculation code: [Application3-5](Application3-5)
-
-Result plots at galance:
+A galance of results:
 
 <img src='Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_plotN/cpac_fmriprep_all_gsr_10min_30min.png' width='40%'>
 
@@ -97,11 +97,12 @@ Result plots at galance:
 
 <img src='Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_dbICC_per_parcel_plot/30min_10min_cpac_fmriprep_all_gsr_parcelwise.png' width='40%'>
 
+Results and calculation code: [Application3-5](Application3-5)
 
 ----
 ### Application 6: A single long scan vs multiple shorter scan 
 
-Results at galance:
+A galance of results:
 
 <img src='Application6_files/figure-gfm/unnamed-chunk-2-1.png' width='50%'>
 

@@ -56,6 +56,8 @@ library(ggsegSchaefer)
 ``` r
 setwd(dirname(getSourceEditorContext()$path))
 source('func_plot_brain_matrix.R')
+data_dir <- file.path('Application3-5', 'results_cpac_HNU', 'ROI_Schaefer200', 'rex_dbICC_per_parcel')
+out_dir <- file.path('Application3-5', 'results_cpac_HNU', 'ROI_Schaefer200', 'rex_dbICC_per_parcel_plot')
 ```
 
 ### compare parcelwise dbICC of GSR vs noGSR across pipelines - 10min
@@ -87,10 +89,10 @@ p <- rex_plot.var.field.n(df, group.name = "pipeline", size.point = 2, color.bre
 p
 ```
 
-![](Application4_plot_parcelwise_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
+![](Application4_plot_parcelwise_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
 
 ``` r
-fname <- sprintf('%s/GSR-NOGSR_10min_%s_parcelwise_fieldmap.png', out_dir, prefix)
+fname <- sprintf('%s/GSR-NOGSR_10min_All-pipelines_parcelwise_fieldmap.png', out_dir)
 ggsave(fname, device="png")
 ```
 
@@ -123,19 +125,16 @@ p <- rex_plot.var.field.n(df, group.name = "pipeline", size.point = 2, color.bre
 p
 ```
 
-![](Application4_plot_parcelwise_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+![](Application4_plot_parcelwise_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
 
 ``` r
-fname <- sprintf('%s/GSR-NOGSR_30min_%s_parcelwise_fieldmap.png', out_dir, prefix)
+fname <- sprintf('%s/GSR-NOGSR_30min_All-pipelines_parcelwise_fieldmap.png', out_dir)
 ggsave(fname, device="png")
 ```
 
 ### Comparing pipeline with GSR and without GSR for each of four pipelines (fMRIprep, CCS, ABCD, CPAC) - parcelwise
 
 ``` r
-data_dir <- file.path('Application3-5', 'results_cpac_HNU', 'ROI_Schaefer200', 'rex_dbICC_per_parcel')
-out_dir <- file.path('Application3-5', 'results_cpac_HNU', 'ROI_Schaefer200', 'rex_dbICC_per_parcel_plot')
-
 cmap = ReX::rgb2hex(ReX::colormap.gradient.flow())
 atlas <- schaefer7_200$data
 labels <- read.table(file.path('Application3-5', 'atlas', 'Schaefer2018_200Parcels_7Networks_labels_MatchedTo_ggseg.txt'), header = TRUE)[,1]
@@ -169,32 +168,32 @@ for (amount in c("10min", "30min")){
 
     ## [1] "10min: cpac_default_all_gsr__CompTo__cpac_default_all"
 
-![](Application4_plot_parcelwise_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
+![](Application4_plot_parcelwise_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
 
     ## [1] "10min: cpac_fmriprep_all_gsr__CompTo__cpac_fmriprep_all"
 
-![](Application4_plot_parcelwise_files/figure-gfm/unnamed-chunk-1-2.png)<!-- -->
+![](Application4_plot_parcelwise_files/figure-gfm/unnamed-chunk-3-2.png)<!-- -->
 
     ## [1] "10min: cpac_ccs_all_gsr__CompTo__cpac_ccs_all"
 
-![](Application4_plot_parcelwise_files/figure-gfm/unnamed-chunk-1-3.png)<!-- -->
+![](Application4_plot_parcelwise_files/figure-gfm/unnamed-chunk-3-3.png)<!-- -->
 
     ## [1] "10min: cpac_abcd_all_gsr__CompTo__cpac_abcd_all"
 
-![](Application4_plot_parcelwise_files/figure-gfm/unnamed-chunk-1-4.png)<!-- -->
+![](Application4_plot_parcelwise_files/figure-gfm/unnamed-chunk-3-4.png)<!-- -->
 
     ## [1] "30min: cpac_default_all_gsr__CompTo__cpac_default_all"
 
-![](Application4_plot_parcelwise_files/figure-gfm/unnamed-chunk-1-5.png)<!-- -->
+![](Application4_plot_parcelwise_files/figure-gfm/unnamed-chunk-3-5.png)<!-- -->
 
     ## [1] "30min: cpac_fmriprep_all_gsr__CompTo__cpac_fmriprep_all"
 
-![](Application4_plot_parcelwise_files/figure-gfm/unnamed-chunk-1-6.png)<!-- -->
+![](Application4_plot_parcelwise_files/figure-gfm/unnamed-chunk-3-6.png)<!-- -->
 
     ## [1] "30min: cpac_ccs_all_gsr__CompTo__cpac_ccs_all"
 
-![](Application4_plot_parcelwise_files/figure-gfm/unnamed-chunk-1-7.png)<!-- -->
+![](Application4_plot_parcelwise_files/figure-gfm/unnamed-chunk-3-7.png)<!-- -->
 
     ## [1] "30min: cpac_abcd_all_gsr__CompTo__cpac_abcd_all"
 
-![](Application4_plot_parcelwise_files/figure-gfm/unnamed-chunk-1-8.png)<!-- -->
+![](Application4_plot_parcelwise_files/figure-gfm/unnamed-chunk-3-8.png)<!-- -->
