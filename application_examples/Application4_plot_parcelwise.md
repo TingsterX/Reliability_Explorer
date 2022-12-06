@@ -58,6 +58,78 @@ setwd(dirname(getSourceEditorContext()$path))
 source('func_plot_brain_matrix.R')
 ```
 
+### compare parcelwise dbICC of GSR vs noGSR across pipelines - 10min
+
+``` r
+fname <- paste0(data_dir, "/dbICC_parcelwise_pipelines_10min.csv")
+df <- fread(fname)
+df <- df %>% dplyr::rename("sigma2_w"="var_w")
+df <- df %>% dplyr::rename("sigma2_b"="var_b")
+
+df %>% group_by(pipeline) %>% summarize(mean = mean(dbICC), std = sd(dbICC))
+```
+
+    ## # A tibble: 8 × 3
+    ##   pipeline               mean    std
+    ##   <chr>                 <dbl>  <dbl>
+    ## 1 cpac_abcd_all         0.352 0.0672
+    ## 2 cpac_abcd_all_gsr     0.395 0.0745
+    ## 3 cpac_ccs_all          0.378 0.0692
+    ## 4 cpac_ccs_all_gsr      0.415 0.0668
+    ## 5 cpac_default_all      0.369 0.0703
+    ## 6 cpac_default_all_gsr  0.413 0.0727
+    ## 7 cpac_fmriprep_all     0.364 0.0705
+    ## 8 cpac_fmriprep_all_gsr 0.418 0.0677
+
+``` r
+p <- rex_plot.var.field.n(df, group.name = "pipeline", size.point = 2, color.brewer.pla = "Paired",
+                          plot.density=FALSE, show.contour = FALSE, color.point.border = NULL, axis.max=10)
+p
+```
+
+![](Application4_plot_parcelwise_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
+
+``` r
+fname <- sprintf('%s/GSR-NOGSR_10min_%s_parcelwise_fieldmap.png', out_dir, prefix)
+ggsave(fname, device="png")
+```
+
+### compare parcelwise dbICC of GSR vs noGSR across pipelines - 30min
+
+``` r
+fname <- paste0(data_dir, "/dbICC_parcelwise_pipelines_30min.csv")
+df <- fread(fname)
+df <- df %>% dplyr::rename("sigma2_w"="var_w")
+df <- df %>% dplyr::rename("sigma2_b"="var_b")
+
+df %>% group_by(pipeline) %>% summarize(mean = mean(dbICC), std = sd(dbICC))
+```
+
+    ## # A tibble: 8 × 3
+    ##   pipeline               mean    std
+    ##   <chr>                 <dbl>  <dbl>
+    ## 1 cpac_abcd_all         0.555 0.0608
+    ## 2 cpac_abcd_all_gsr     0.664 0.0613
+    ## 3 cpac_ccs_all          0.568 0.0576
+    ## 4 cpac_ccs_all_gsr      0.695 0.0505
+    ## 5 cpac_default_all      0.573 0.0588
+    ## 6 cpac_default_all_gsr  0.680 0.0669
+    ## 7 cpac_fmriprep_all     0.564 0.0632
+    ## 8 cpac_fmriprep_all_gsr 0.678 0.0548
+
+``` r
+p <- rex_plot.var.field.n(df, group.name = "pipeline", size.point = 2, color.brewer.pla = "Paired",
+                          plot.density=FALSE, show.contour = FALSE, color.point.border = NULL)
+p
+```
+
+![](Application4_plot_parcelwise_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+
+``` r
+fname <- sprintf('%s/GSR-NOGSR_30min_%s_parcelwise_fieldmap.png', out_dir, prefix)
+ggsave(fname, device="png")
+```
+
 ### Comparing pipeline with GSR and without GSR for each of four pipelines (fMRIprep, CCS, ABCD, CPAC) - parcelwise
 
 ``` r

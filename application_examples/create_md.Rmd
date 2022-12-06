@@ -1,0 +1,54 @@
+#### create markdown file - montage plots
+
+## Application 3
+```{r}
+for (amount in c("10min", "30min")){
+  pipeline_list <- c("cpac_default_all_gsr", "cpac_fmriprep_all_gsr", "cpac_ccs_all_gsr", "cpac_abcd_all_gsr")
+  for (pipeline1 in pipeline_list){
+    for (pipeline2 in pipeline_list){
+      if (pipeline1!=pipeline2){
+        prefix <- sprintf('PipelineComp%s_%s-%s', amount, pipeline1, pipeline2)
+        cat(sprintf('    GSR(%s): %s vs %s\n', amount, pipeline1, pipeline2))
+        cat('\n')
+        cat(sprintf('![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/%s_ReX_CompareICC_ChangeOfVariation_Raw.png)\n', prefix))
+        cat(sprintf('![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/%s_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)\n', prefix))
+        cat('\n')
+      }
+    }
+  }
+  pipeline_list <- c("cpac_default_all",  "cpac_fmriprep_all",  "cpac_ccs_all", "cpac_abcd_all")
+  for (pipeline1 in pipeline_list){
+    for (pipeline2 in pipeline_list){
+      if (pipeline1!=pipeline2){
+        prefix <- sprintf('PipelineComp%s_%s-%s', amount, pipeline1, pipeline2)
+        cat(sprintf('    GSR(%s): %s vs %s\n', amount, pipeline1, pipeline2))
+        cat('\n')
+        cat(sprintf('![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/%s_ReX_CompareICC_ChangeOfVariation_Raw.png)\n', prefix))
+        cat(sprintf('![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/%s_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)\n', prefix))
+        cat('\n')
+      }
+    }
+  }
+}
+```
+
+## Application 4
+```{r}
+pipeline_list <- c("cpac_default_all",  "cpac_fmriprep_all",  "cpac_ccs_all", "cpac_abcd_all")
+
+for (amount in c("10min", "30min")){
+  for (pipeline in pipeline_list){
+
+        prefix <- sprintf('GSR-NOGSR_%s_%s', amount, pipeline)
+        cat(sprintf('GSR vs NOGSR (%s): %s\n', amount, pipeline))
+        cat('\n')
+        cat(sprintf('![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_plotN/%s_%s_NOGSR_GSR.png)\n', pipeline, amount))
+        cat('\n')
+        cat(sprintf('![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/%s_ReX_CompareICC_ChangeOfVariation_Raw.png)\n', prefix))
+        cat('\n')
+        cat(sprintf('![](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/%s_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png)\n', prefix))
+        cat('\n')
+  }
+    
+}
+```

@@ -62,25 +62,30 @@ Result plots at galance (example comparision: fMRIprep vs ABCD)
 ----
 ### Application 4: fMRI pipelines with and without Global signal regression (GSR) 
 
-Results and calculation code: [Application3-5](Application3-5)
-
-- GSR vs NoGSR (edgewise ICC): [field map plots](Application3-5/results_cpac_HNUROI_Schaefer200/rex_icc_comp) GSR-NOGSR_*.png
+- GSR vs NoGSR (edgewise ICC): [field map plots](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp) GSR-NOGSR_*.png
 
 - GSR vs NoGSR (edgewise ICC): [matrix plots](Application4_plot_edgewise.md)
 
 - GSR vs NoGSR (parcelwise dbICC): [cortex plots](Application4_plot_parcelwise.md)
 
+
+Results and calculation code: [Application3-5](Application3-5) 
+
+Result plots at galance:
+
+
 ----
 
 ### Application 5: 30min vs 10min fMRI data across pipelines
 
-Results and calculation code: [Application3-5](Application3-5)
 
 - 30min vs 10min (edgewise ICC): [field map plots](Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp) 30min-10min_*.png
 
 - 30min vs 10min (edgewise ICC): [matrix plots](Application5_plot_edgewise.md)
 
 - 30min vs 10min (parcelwise dbICC): [cortex plots](Application5_plot_parcelwise.md)
+
+Results and calculation code: [Application3-5](Application3-5)
 
 Result plots at galance:
 

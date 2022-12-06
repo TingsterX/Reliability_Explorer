@@ -31,6 +31,38 @@ setwd(dirname(getSourceEditorContext()$path))
 source('func_plot_brain_matrix.R')
 ```
 
+### compare parcelwise dbICC of GSR vs noGSR across pipelines - 10min
+```{r}
+fname <- paste0(data_dir, "/dbICC_parcelwise_pipelines_10min.csv")
+df <- fread(fname)
+df <- df %>% dplyr::rename("sigma2_w"="var_w")
+df <- df %>% dplyr::rename("sigma2_b"="var_b")
+
+df %>% group_by(pipeline) %>% summarize(mean = mean(dbICC), std = sd(dbICC))
+
+p <- rex_plot.var.field.n(df, group.name = "pipeline", size.point = 2, color.brewer.pla = "Paired",
+                          plot.density=FALSE, show.contour = FALSE, color.point.border = NULL, axis.max=10)
+p
+fname <- sprintf('%s/GSR-NOGSR_10min_%s_parcelwise_fieldmap.png', out_dir, prefix)
+ggsave(fname, device="png")
+```
+
+### compare parcelwise dbICC of GSR vs noGSR across pipelines - 30min
+```{r}
+fname <- paste0(data_dir, "/dbICC_parcelwise_pipelines_30min.csv")
+df <- fread(fname)
+df <- df %>% dplyr::rename("sigma2_w"="var_w")
+df <- df %>% dplyr::rename("sigma2_b"="var_b")
+
+df %>% group_by(pipeline) %>% summarize(mean = mean(dbICC), std = sd(dbICC))
+
+p <- rex_plot.var.field.n(df, group.name = "pipeline", size.point = 2, color.brewer.pla = "Paired",
+                          plot.density=FALSE, show.contour = FALSE, color.point.border = NULL)
+p
+fname <- sprintf('%s/GSR-NOGSR_30min_%s_parcelwise_fieldmap.png', out_dir, prefix)
+ggsave(fname, device="png")
+```
+
 ### Comparing pipeline with GSR and without GSR for each of four pipelines (fMRIprep, CCS, ABCD, CPAC) - parcelwise
 ```{r}
 data_dir <- file.path('Application3-5', 'results_cpac_HNU', 'ROI_Schaefer200', 'rex_dbICC_per_parcel')
