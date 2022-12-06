@@ -86,6 +86,8 @@ Result plots at galance:
 
 <img src='Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_plotN/cpac_fmriprep_all_gsr_10min_30min.png' width='40%'>
 
+<img src='Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp/30min-10min_cpac_fmriprep_all_gsr_ReX_CompareICC_ChangeOfVariation_Normalized_GradientFlow.png' width='35%'>
+
 <img src='Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_icc_comp_matrix/30min-10min__cpac_fmriprep_all_gsr__edgewise_matrix.png' width='40%'>
 
 <img src='Application3-5/results_cpac_HNU/ROI_Schaefer200/rex_dbICC_per_parcel_plot/30min_10min_cpac_fmriprep_all_gsr_parcelwise.png' width='40%'>
