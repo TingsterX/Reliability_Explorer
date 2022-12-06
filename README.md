@@ -123,7 +123,7 @@ docker run -it --rm --entrypoint R \
 
 ----
 
-### Relationship between reliability and validity ([here](reliability_and_validity/reliability_and_validity.md))
+### Relationship between reliability and validity ([details here](reliability_and_validity/reliability_and_validity.md))
 
 ![](reliability_and_validity/reliability_validity_gif.gif)
 
@@ -132,6 +132,12 @@ reliability
 validity
 <img src='reliability_and_validity/Validity_Colormap.png' width='25%'>
 
+----
+### Both reliability and sample size matter for examining the association between two variables of interest
+
+simulation: [here](simulation/simulation_variation_and_sample_size.md)
+
+<img src='simulation/simulation_variation_and_sample_size.jpeg' width='70%'>
 ----
 
 #### When using “Reliability Explorer (ReX)”, please cite the following manuscript:
