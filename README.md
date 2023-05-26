@@ -13,11 +13,11 @@
 
 **ReX** online shiny app (https://tingsterx.shinyapps.io/ReliabilityExplorer) 
 
-Reference: 
+**Reference** 
 
-[Xu et al., ReX: an integrative tool for quantifying and optimizing measurement reliability for the study of individual differences](Reliability_Explorer.pdf)
+ReX: an integrative tool for quantifying and optimizing measurement reliability for the study of individual differences ([pdf](Reliability_Explorer.pdf))
 
-[Xu et al., A Guide for Quantifying and Optimizing Measurement Reliability for the Study of Individual Differences.](https://doi.org/10.1101/2022.01.27.478100)
+A Guide for Quantifying and Optimizing Measurement Reliability for the Study of Individual Differences. ([link](https://doi.org/10.1101/2022.01.27.478100))
 
 ----
 
